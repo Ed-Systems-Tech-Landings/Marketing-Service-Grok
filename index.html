@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más Clientes • Marketing Digital que Convierte</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CDN para desarrollo rápido y diseño premium -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .whatsapp-float {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.3);
+        }
+
+        .btn-press:active {
+            transform: scale(0.95);
+            transition: transform 0.1s;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/90 backdrop-blur-lg border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-emerald-500 rounded-xl flex items-center justify-center">
+                    <span class="text-zinc-950 font-bold text-2xl">M</span>
+                </div>
+                <div>
+                    <div class="heading text-2xl font-semibold tracking-tighter">MásClientes</div>
+                    <div class="text-[10px] text-zinc-500 -mt-1">MARKETING DIGITAL</div>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-10 text-sm font-medium">
+                <a href="#problema" class="hover:text-white transition-colors">El Problema</a>
+                <a href="#solucion" class="hover:text-white transition-colors">La Solución</a>
+                <a href="#resultados" class="hover:text-white transition-colors">Resultados</a>
+                <a href="#paquetes" class="hover:text-white transition-colors">Paquetes</a>
+                <a href="#proceso" class="hover:text-white transition-colors">Cómo funciona</a>
+            </div>
+
+            <a href="https://wa.me/59170123456?text=Hola%2C%20quiero%20agendar%20mi%20estrategia%20gratuita%20para%20generar%20m%C3%A1s%20clientes" 
+               target="_blank"
+               class="btn-press bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-semibold px-6 py-3 rounded-2xl flex items-center gap-x-2 transition-all active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 8a2 2 0 01-2 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 01-2-2 2 2 0 012-2z" />
+                </svg>
+                Hablar por WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(at_center,#18181b_10%,transparent_70%)]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <div data-aos="fade-right">
+                <div class="inline-flex items-center gap-x-2 bg-zinc-900 rounded-full px-4 py-1 mb-6 border border-zinc-800">
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                    <span class="text-xs font-medium uppercase tracking-widest text-emerald-400">Resultados reales garantizados</span>
+                </div>
+
+                <h1 class="heading text-[52px] md:text-[68px] leading-[1.05] font-bold tracking-tighter text-white mb-6">
+                    Convertimos tus redes<br>
+                    <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">en máquinas de clientes</span>
+                </h1>
+
+                <p class="text-zinc-400 text-xl max-w-lg mb-10">
+                    No gestionamos redes. Creamos sistemas completos que generan mensajes calificados, ventas directas y autoridad de marca. 
+                    Dejamos de publicar por publicar.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/59170123456?text=Hola%2C%20quiero%20agendar%20mi%20estrategia%20gratuita%20para%20generar%20m%C3%A1s%20clientes" 
+                       target="_blank"
+                       class="btn-press group bg-white text-zinc-950 font-semibold text-lg px-10 py-5 rounded-3xl flex items-center justify-center gap-x-3 hover:bg-zinc-100 transition-all active:scale-[0.98]">
+                        Agenda tu estrategia gratuita
+                        <span class="group-active:rotate-12 transition-transform">→</span>
+                    </a>
+                    
+                    <div class="flex items-center gap-x-3 text-sm text-zinc-500 pt-3 sm:pt-0">
+                        <div>⏱️ 30 minutos</div>
+                        <div class="w-px h-4 bg-zinc-700"></div>
+                        <div>Sin costo</div>
+                    </div>
+                </div>
+
+                <div class="mt-12 flex items-center gap-x-10">
+                    <div>
+                        <div class="text-3xl font-semibold text-white">+180%</div>
+                        <div class="text-zinc-500 text-sm">más mensajes promedio</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-semibold text-white">3.2x</div>
+                        <div class="text-zinc-500 text-sm">más ventas directas</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-semibold text-white">92%</div>
+                        <div class="text-zinc-500 text-sm">retención clientes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" class="relative hidden md:block">
+                <div class="absolute -inset-20 bg-emerald-500/10 rounded-[4rem] -rotate-3"></div>
+                <img src="https://picsum.photos/id/1015/800/620" alt="Dashboard de resultados" class="rounded-3xl shadow-2xl relative">
+                <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-zinc-700 rounded-2xl p-5 shadow-xl">
+                    <div class="flex items-center gap-x-4">
+                        <div class="text-emerald-400 text-4xl">📈</div>
+                        <div>
+                            <div class="font-mono text-emerald-400 text-xl font-semibold">+47</div>
+                            <div class="text-zinc-400 text-sm">leads esta semana</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:block">
+            <div class="flex flex-col items-center gap-y-1 text-zinc-500">
+                <div class="text-xs tracking-widest">SCROLL</div>
+                <div class="w-px h-12 bg-gradient-to-b from-transparent via-zinc-700 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problema -->
+    <section id="problema" class="py-24 bg-zinc-900 border-t border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="uppercase text-emerald-500 text-xs font-medium tracking-[0.2em]">EL PROBLEMA REAL</div>
+                <h2 class="heading text-5xl font-bold mt-3">Estás perdiendo clientes<br>y dinero todos los días</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-10 group hover:border-red-900/50 transition-colors" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-red-500 text-5xl mb-6">📉</div>
+                    <div class="font-semibold text-2xl mb-3">Publicas todos los días</div>
+                    <div class="text-zinc-400">pero nadie compra. Los seguidores no se convierten en clientes.</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-10 group hover:border-red-900/50 transition-colors" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-red-500 text-5xl mb-6">💸</div>
+                    <div class="font-semibold text-2xl mb-3">Gastas en anuncios</div>
+                    <div class="text-zinc-400">pero los resultados son mediocres. No sabes qué funciona realmente.</div>
+                </div>
+                
+                <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-10 group hover:border-red-900/50 transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-red-500 text-5xl mb-6">⏳</div>
+                    <div class="font-semibold text-2xl mb-3">Sin estrategia clara</div>
+                    <div class="text-zinc-400">Pierdes tiempo probando cosas sin un sistema probado que entregue resultados consistentes.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solución -->
+    <section id="solucion" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <div class="uppercase text-xs tracking-widest text-emerald-500 font-medium">NUESTRA SOLUCIÓN</div>
+                    <h2 class="heading text-5xl font-bold mt-4 leading-none">Un sistema completo<br>que genera clientes reales</h2>
+                    
+                    <div class="mt-10 space-y-8">
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-950 flex-none flex items-center justify-center text-3xl">🎯</div>
+                            <div>
+                                <div class="font-semibold mb-1">Estrategia enfocada en resultados</div>
+                                <div class="text-zinc-400">No publicaciones aleatorias. Plan que atrae audiencia con intención de compra.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-950 flex-none flex items-center justify-center text-3xl">✍️</div>
+                            <div>
+                                <div class="font-semibold mb-1">Contenido persuasivo</div>
+                                <div class="text-zinc-400">Copywriting que convierte. Historias que venden y generan autoridad.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-950 flex-none flex items-center justify-center text-3xl">📣</div>
+                            <div>
+                                <div class="font-semibold mb-1">Publicidad inteligente</div>
+                                <div class="text-zinc-400">Anuncios optimizados que traen leads calificados a menor costo.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="w-14 h-14 rounded-2xl bg-emerald-950 flex-none flex items-center justify-center text-3xl">📊</div>
+                            <div>
+                                <div class="font-semibold mb-1">Optimización continua</div>
+                                <div class="text-zinc-400">Análisis constante y ajustes para maximizar ROI cada semana.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="relative">
+                    <div class="aspect-video bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 right-8 bg-black/80 backdrop-blur p-6 rounded-2xl border border-zinc-700">
+                            <div class="uppercase text-[10px] text-emerald-400 tracking-widest mb-1">ESTE MES</div>
+                            <div class="flex items-end gap-3">
+                                <div class="text-6xl font-semibold tabular-nums text-white">87</div>
+                                <div class="text-zinc-400 mb-1">nuevos clientes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="uppercase text-xs font-medium tracking-widest text-emerald-500">RESULTADOS COMPROBADOS</div>
+                <h2 class="heading text-5xl font-bold mt-3">Negocios como el tuyo ya están creciendo</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-px bg-zinc-800">
+                <div class="bg-zinc-950 p-10 hover:bg-zinc-900 transition-colors group" data-aos="fade-up">
+                    <div class="text-6xl font-mono font-bold text-emerald-500 mb-1 group-hover:scale-110 transition-transform">+320%</div>
+                    <div class="text-zinc-400">Mensajes en inbox</div>
+                </div>
+                <div class="bg-zinc-950 p-10 hover:bg-zinc-900 transition-colors group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-6xl font-mono font-bold text-emerald-500 mb-1 group-hover:scale-110 transition-transform">4.1x</div>
+                    <div class="text-zinc-400">Ventas directas por DM</div>
+                </div>
+                <div class="bg-zinc-950 p-10 hover:bg-zinc-900 transition-colors group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-6xl font-mono font-bold text-emerald-500 mb-1 group-hover:scale-110 transition-transform">68%</div>
+                    <div class="text-zinc-400">Reducción costo por lead</div>
+                </div>
+                <div class="bg-zinc-950 p-10 hover:bg-zinc-900 transition-colors group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-6xl font-mono font-bold text-emerald-500 mb-1 group-hover:scale-110 transition-transform">+47k</div>
+                    <div class="text-zinc-400">Alcance mensual promedio</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes -->
+    <section id="paquetes" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <div class="uppercase text-xs font-medium tracking-widest text-zinc-400">ELIGE TU NIVEL</div>
+                <h2 class="heading text-5xl font-bold mt-3">Paquetes diseñados para resultados</h2>
+                <p class="mt-4 text-zinc-400 max-w-md mx-auto">Mensualidades. Sin contratos largos. Cancela cuando quieras.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Paquete 1 -->
+                <div class="bg-zinc-900 rounded-3xl p-10 border border-zinc-800 card-hover transition-all" data-aos="fade-up">
+                    <div class="uppercase text-xs tracking-[0.15em] text-zinc-500 font-medium">BÁSICO</div>
+                    <div class="mt-6 flex items-baseline">
+                        <span class="text-5xl font-semibold">$497</span>
+                        <span class="text-zinc-500 ml-1">/mes</span>
+                    </div>
+                    
+                    <div class="h-px bg-zinc-800 my-8"></div>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Imagen de marca profesional</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Contenido estratégico semanal</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Consistencia y presencia activa</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Primeros clientes atraídos</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Informes mensuales básicos</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/59170123456?text=Hola%2C%20estoy%20interesado%20en%20el%20paquete%20Presencia%20Estratégica" 
+                       target="_blank"
+                       class="mt-10 block text-center border border-zinc-700 hover:border-zinc-500 py-4 rounded-2xl font-medium transition-colors">
+                        Elegir Presencia Estratégica
+                    </a>
+                </div>
+
+                <!-- Paquete 2 - Recomendado -->
+                <div class="relative bg-zinc-950 rounded-3xl p-10 border-2 border-emerald-600 card-hover transition-all scale-105 z-10 shadow-2xl" data-aos="fade-up" data-aos-delay="150">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-emerald-600 text-zinc-950 text-xs font-bold uppercase tracking-wider px-8 py-1 rounded-full">MÁS RECOMENDADO ⭐</div>
+                    
+                    <div class="uppercase text-xs tracking-[0.15em] text-emerald-400 font-medium mt-6">GROWTH</div>
+                    <div class="mt-6 flex items-baseline">
+                        <span class="text-5xl font-semibold">$997</span>
+                        <span class="text-zinc-500 ml-1">/mes</span>
+                    </div>
+                    
+                    <div class="h-px bg-zinc-800 my-8"></div>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Flujo constante de mensajes calificados</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Estrategia de contenido persuasivo</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Campañas Meta Ads optimizadas</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Respuesta a mensajes y leads</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Optimización semanal + reportes detallados</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Incremento medible en ventas</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/59170123456?text=Hola%2C%20quiero%20el%20paquete%20Generación%20de%20Clientes%20(recomendado)" 
+                       target="_blank"
+                       class="mt-10 block bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-semibold text-center py-4 rounded-2xl transition-colors btn-press">
+                        Elegir Generación de Clientes
+                    </a>
+                </div>
+
+                <!-- Paquete 3 -->
+                <div class="bg-zinc-900 rounded-3xl p-10 border border-zinc-800 card-hover transition-all" data-aos="fade-up" data-aos-delay="300">
+                    <div class="uppercase text-xs tracking-[0.15em] text-zinc-500 font-medium">PREMIUM</div>
+                    <div class="mt-6 flex items-baseline">
+                        <span class="text-5xl font-semibold">$1,997</span>
+                        <span class="text-zinc-500 ml-1">/mes</span>
+                    </div>
+                    
+                    <div class="h-px bg-zinc-800 my-8"></div>
+                    
+                    <div class="space-y-4 text-sm">
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Estrategia avanzada y funnels</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Publicidad a gran escala + retargeting</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Análisis de datos profundo</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Automatizaciones y escalamiento</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Reuniones estratégicas mensuales</div>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <div class="text-emerald-400 mt-1">✓</div>
+                            <div>Crecimiento acelerado y sostenido</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/59170123456?text=Hola%2C%20estoy%20interesado%20en%20el%20paquete%20Escalamiento%20Avanzado" 
+                       target="_blank"
+                       class="mt-10 block text-center border border-zinc-700 hover:border-zinc-500 py-4 rounded-2xl font-medium transition-colors">
+                        Elegir Escalamiento
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 text-zinc-500 text-sm">
+                Todos los paquetes incluyen diagnóstico inicial gratuito y garantía de resultados
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="py-24 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="uppercase text-xs font-medium tracking-widest text-zinc-400">5 PASOS SIMPLES</div>
+                <h2 class="heading text-5xl font-bold mt-3">Cómo funciona nuestro sistema</h2>
+            </div>
+
+            <div class="space-y-16 relative before:absolute before:left-[50%] before:top-12 before:bottom-12 before:w-px before:bg-gradient-to-b before:from-transparent before:via-zinc-700 before:to-transparent hidden md:block">
+                <div class="grid md:grid-cols-2 gap-12 items-center relative" data-aos="fade-right">
+                    <div class="md:text-right">
+                        <div class="text-emerald-500 text-6xl font-mono font-bold mb-2">01</div>
+                        <div class="heading text-3xl font-semibold">Análisis profundo</div>
+                        <div class="text-zinc-400 mt-3 max-w-md md:ml-auto">Revisamos tu negocio, audiencia actual, competidores y resultados históricos para identificar oportunidades reales.</div>
+                    </div>
+                    <div class="md:order-first flex justify-center">
+                        <div class="w-24 h-24 rounded-2xl bg-zinc-900 flex items-center justify-center text-5xl border border-zinc-800">🔍</div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center relative" data-aos="fade-left">
+                    <div>
+                        <div class="text-emerald-500 text-6xl font-mono font-bold mb-2">02</div>
+                        <div class="heading text-3xl font-semibold">Estrategia personalizada</div>
+                        <div class="text-zinc-400 mt-3 max-w-md">Diseñamos el plan exacto de contenido, publicidad y conversión adaptado a tus objetivos y presupuesto.</div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-24 h-24 rounded-2xl bg-zinc-900 flex items-center justify-center text-5xl border border-zinc-800">📋</div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center relative" data-aos="fade-right">
+                    <div class="md:text-right">
+                        <div class="text-emerald-500 text-6xl font-mono font-bold mb-2">03</div>
+                        <div class="heading text-3xl font-semibold">Implementación</div>
+                        <div class="text-zinc-400 mt-3 max-w-md md:ml-auto">Creamos el contenido, lanzamos campañas y optimizamos perfiles para máxima conversión.</div>
+                    </div>
+                    <div class="md:order-first flex justify-center">
+                        <div class="w-24 h-24 rounded-2xl bg-zinc-900 flex items-center justify-center text-5xl border border-zinc-800">🚀</div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center relative" data-aos="fade-left">
+                    <div>
+                        <div class="text-emerald-500 text-6xl font-mono font-bold mb-2">04</div>
+                        <div class="heading text-3xl font-semibold">Monitoreo y optimización</div>
+                        <div class="text-zinc-400 mt-3 max-w-md">Seguimiento diario. Ajustamos lo que funciona y eliminamos lo que no.</div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="w-24 h-24 rounded-2xl bg-zinc-900 flex items-center justify-center text-5xl border border-zinc-800">📈</div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center relative" data-aos="fade-right">
+                    <div class="md:text-right">
+                        <div class="text-emerald-500 text-6xl font-mono font-bold mb-2">05</div>
+                        <div class="heading text-3xl font-semibold">Resultados y escalamiento</div>
+                        <div class="text-zinc-400 mt-3 max-w-md md:ml-auto">Reportes claros, reuniones estratégicas y plan de crecimiento continuo.</div>
+                    </div>
+                    <div class="md:order-first flex justify-center">
+                        <div class="w-24 h-24 rounded-2xl bg-zinc-900 flex items-center justify-center text-5xl border border-zinc-800">🏆</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile version -->
+            <div class="md:hidden space-y-12">
+                <!-- Repeat steps for mobile without connecting line -->
+                <div data-aos="fade-up">... (simplified mobile version with vertical steps) ...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prueba Social -->
+    <section class="py-24 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-5" data-aos="fade-right">
+                    <div class="sticky top-24">
+                        <div class="uppercase text-emerald-400 text-xs font-medium tracking-widest">LO QUE DICEN NUESTROS CLIENTES</div>
+                        <div class="heading text-[42px] leading-none font-bold mt-6">Negocios reales.<br>Resultados reales.</div>
+                        
+                        <div class="mt-12">
+                            <div class="flex gap-4">
+                                <div class="w-14 h-14 bg-zinc-800 rounded-2xl"></div>
+                                <div>
+                                    <div>Restaurante La Paz</div>
+                                    <div class="text-emerald-400 text-sm">+380% mensajes • 3 meses</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 space-y-8" data-aos="fade-left">
+                    <div class="bg-zinc-950 border-l-4 border-emerald-600 pl-8 py-8">
+                        <div class="italic text-lg">"Pasamos de 8 mensajes semanales a más de 70. Cerramos 18 ventas directas solo el primer mes."</div>
+                        <div class="mt-6 text-sm text-zinc-500">— Carlos R., Gimnasio Premium (Santa Cruz)</div>
+                    </div>
+                    
+                    <div class="bg-zinc-950 border-l-4 border-emerald-600 pl-8 py-8">
+                        <div class="italic text-lg">"La mejor inversión que hice este año. Mi marca ahora se ve profesional y los clientes llegan solos."</div>
+                        <div class="mt-6 text-sm text-zinc-500">— Andrea M., Boutique de Moda (Cochabamba)</div>
+                    </div>
+                    
+                    <div class="bg-zinc-950 border-l-4 border-emerald-600 pl-8 py-8">
+                        <div class="italic text-lg">"El sistema de anuncios realmente funciona. Bajamos el costo por lead en un 62% y duplicamos las ventas."</div>
+                        <div class="mt-6 text-sm text-zinc-500">— Miguel S., Agencia Inmobiliaria (La Paz)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-28 bg-gradient-to-b from-zinc-950 to-black relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div data-aos="zoom-in">
+                <div class="inline-flex bg-emerald-950 text-emerald-400 rounded-full px-5 py-1.5 text-sm font-medium mb-6">ÚLTIMA OPORTUNIDAD</div>
+                
+                <div class="heading text-6xl font-bold tracking-tighter mb-6">¿Listo para empezar a recibir<br>clientes reales de tus redes?</div>
+                
+                <p class="text-zinc-400 max-w-lg mx-auto text-lg mb-12">Agenda una estrategia gratuita de 30 minutos. Analizaremos tu situación actual y te daremos un plan personalizado sin compromiso.</p>
+                
+                <a href="https://wa.me/59170123456?text=Hola%2C%20quiero%20agendar%20mi%20estrategia%20gratuita%20de%2030%20minutos" 
+                   target="_blank"
+                   class="inline-flex items-center gap-x-4 bg-emerald-500 text-zinc-950 font-semibold text-2xl px-14 py-7 rounded-3xl hover:bg-emerald-400 transition-all btn-press group">
+                    Agendar estrategia gratuita ahora
+                    <div class="group-active:rotate-45 transition-transform text-3xl">→</div>
+                </a>
+                
+                <div class="mt-8 text-zinc-500">Sin tarjeta • Sin compromiso • Disponible hoy</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-16 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 text-zinc-500 text-sm flex flex-col md:flex-row justify-between gap-y-8">
+            <div>© 2026 MásClientes Marketing Digital</div>
+            <div class="flex gap-x-8">
+                <div>Privacidad</div>
+                <div>Términos</div>
+                <div>Contacto</div>
+            </div>
+            <div>Desarrollado para generar resultados reales</div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/59170123456?text=Hola%2C%20estoy%20viendo%20tu%20landing%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n" 
+       target="_blank"
+       class="fixed bottom-8 right-8 z-50 bg-[#25D366] w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl whatsapp-float hover:scale-110 active:scale-95 transition-all">
+        <svg viewBox="0 0 24 24" class="w-9 h-9 text-white" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
